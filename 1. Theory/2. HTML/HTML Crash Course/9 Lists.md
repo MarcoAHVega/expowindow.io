@@ -23,7 +23,7 @@ where the order doesn't matter
 
 for example a shopping list
 
-you may have to buy red milk and eggs but the order doesn't have any
+you may have to buy bread milk and eggs but the order doesn't have any
 significance
 
 - to define unordered lists we make use of two html tags
@@ -33,50 +33,8 @@ significance
 first we write a ul tag for an ordered list
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML Crash Course</title>
-  </head>
-  <body>
-    <h1>Hading 1</h1>
-    <h2>Hading 2</h2>
-    <h3>Hading 3</h3>
-    <h4>Hading 4</h4>
-    <h5>Hading 5</h5>
-    <h6>Hading 6</h6>
-
-    <p>This is a paragraph</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-      Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-      molestiae dolores in odio laudantium ipsa praesentium?
-    </p>
-    <hr />
-    <p>
-      <strong>Lorem ipsum</strong>
-      <em>dolor, sit</em>
-      amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-      <br />
-      <mark>blanditiis</mark>
-      <del>distinctio beatae</del>
-      <ins>aperiam repudiandae velit</ins>
-      <sub>laborum eligendi</sub>
-      <sup>dolore asperiores</sup>
-      <br />
-      voluptatum magni officiis incidunt ad sit
-      <small>optio! In?</small>
-    </p>
-
-    <div>Block 1</div>
-    <div>Block 2</div>
-
-    <span>Inline 1</span>
-    <span>Inline 2</span>
-
-    <ul></ul>
-  </body>
-</html>
+<!-- Lists -->
+<ul></ul>
 ```
 
 - > the list item tag
@@ -92,54 +50,13 @@ similarly the second item is milk
 and the third item is eggs
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML Crash Course</title>
-  </head>
-  <body>
-    <h1>Hading 1</h1>
-    <h2>Hading 2</h2>
-    <h3>Hading 3</h3>
-    <h4>Hading 4</h4>
-    <h5>Hading 5</h5>
-    <h6>Hading 6</h6>
+<!-- Lists -->
 
-    <p>This is a paragraph</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-      Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-      molestiae dolores in odio laudantium ipsa praesentium?
-    </p>
-    <hr />
-    <p>
-      <strong>Lorem ipsum</strong>
-      <em>dolor, sit</em>
-      amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-      <br />
-      <mark>blanditiis</mark>
-      <del>distinctio beatae</del>
-      <ins>aperiam repudiandae velit</ins>
-      <sub>laborum eligendi</sub>
-      <sup>dolore asperiores</sup>
-      <br />
-      voluptatum magni officiis incidunt ad sit
-      <small>optio! In?</small>
-    </p>
-
-    <div>Block 1</div>
-    <div>Block 2</div>
-
-    <span>Inline 1</span>
-    <span>Inline 2</span>
-
-    <ul>
-      <li>Bread</li>
-      <li>Milk</li>
-      <li>Eggs</li>
-    </ul>
-  </body>
-</html>
+<ul>
+  <li>Bread</li>
+  <li>Milk</li>
+  <li>Eggs</li>
+</ul>
 ```
 
 if you now save the file
@@ -180,60 +97,19 @@ Turn left and reach point B
 Turn left and arrive at point C
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML Crash Course</title>
-  </head>
-  <body>
-    <h1>Hading 1</h1>
-    <h2>Hading 2</h2>
-    <h3>Hading 3</h3>
-    <h4>Hading 4</h4>
-    <h5>Hading 5</h5>
-    <h6>Hading 6</h6>
+<!-- Lists -->
 
-    <p>This is a paragraph</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-      Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-      molestiae dolores in odio laudantium ipsa praesentium?
-    </p>
-    <hr />
-    <p>
-      <strong>Lorem ipsum</strong>
-      <em>dolor, sit</em>
-      amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-      <br />
-      <mark>blanditiis</mark>
-      <del>distinctio beatae</del>
-      <ins>aperiam repudiandae velit</ins>
-      <sub>laborum eligendi</sub>
-      <sup>dolore asperiores</sup>
-      <br />
-      voluptatum magni officiis incidunt ad sit
-      <small>optio! In?</small>
-    </p>
+<ul>
+  <li>Bread</li>
+  <li>Milk</li>
+  <li>Eggs</li>
+</ul>
 
-    <div>Block 1</div>
-    <div>Block 2</div>
-
-    <span>Inline 1</span>
-    <span>Inline 2</span>
-
-    <ul>
-      <li>Bread</li>
-      <li>Milk</li>
-      <li>Eggs</li>
-    </ul>
-
-    <ol>
-      <li>Reach point A</li>
-      <li>Turn left and reach point B</li>
-      <li>Turn left and arrive at point C</li>
-    </ol>
-  </body>
-</html>
+<ol>
+  <li>Reach point A</li>
+  <li>Turn right and reach point B</li>
+  <li>Turn left and arrive at point C</li>
+</ol>
 ```
 
 save the file and you should now be able to see the ordered list
@@ -261,150 +137,31 @@ for example dt ice cream, which is the term
 
 and dd a soft sweet frozen food which is the definition
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML Crash Course</title>
-  </head>
-  <body>
-    <!-- Headings and Paragraph -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 2</h3>
-    <h4>Heading 2</h4>
-    <h5>Heading 2</h5>
-    <h6>Heading 2</h6>
-    <p>This is a paragraph</p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolorem quaerat impedit.
-      Consectetur ut atque, totam odit dignissimos suscipit fugiat asperiores minus nulla, dolorem
-      animi inventore odio vitae voluptas expedita.
-    </p>
-    <br />
-    <hr />
-
-    <!-- Text Formatting-->
-    <p>
-      Lorem ipsum,
-      <strong>dolor</strong>
-      sit amet
-      <em>consectetur</em>
-      adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
-      <del>totam</del>
-      <ins>odit</ins>
-      dignissimos suscipit
-      <mark>fugiat</mark>
-      asperiores
-      <sub>minus</sub>
-      <sup>nulla</sup>
-      ,
-      <small>dolorem animi inventore odio vitae voluptas expedita.</small>
-    </p>
-
-    <!--Block and inline display -->
-    <div>Block 1</div>
-    <div>Block 2</div>
-
-    <span>Inline 1</span>
-    <span>Inline 2</span>
-
-    <!-- Lists -->
-
-    <ul>
-      <li>Bread</li>
-      <li>Milk</li>
-      <li>Eggs</li>
-    </ul>
-
-    <ol>
-      <li>Reach point A</li>
-      <li>Turn right and reach point B</li>
-      <li>Turn left and arrive at point C</li>
-    </ol>
-
-    <dl>
-      <dt>Ice cream</dt>
-      <dd>- A soft sweet frozen food</dd>
-    </dl>
-  </body>
-</html>
-```
-
 similarly dt, the term is going to be tea
 
 and dd, the definition is going to be a hot drink
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML Crash Course</title>
-  </head>
-  <body>
-    <!-- Headings and Paragraph -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 2</h3>
-    <h4>Heading 2</h4>
-    <h5>Heading 2</h5>
-    <h6>Heading 2</h6>
-    <p>This is a paragraph</p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolorem quaerat impedit.
-      Consectetur ut atque, totam odit dignissimos suscipit fugiat asperiores minus nulla, dolorem
-      animi inventore odio vitae voluptas expedita.
-    </p>
-    <br />
-    <hr />
+<!-- Lists -->
 
-    <!-- Text Formatting-->
-    <p>
-      Lorem ipsum,
-      <strong>dolor</strong>
-      sit amet
-      <em>consectetur</em>
-      adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
-      <del>totam</del>
-      <ins>odit</ins>
-      dignissimos suscipit
-      <mark>fugiat</mark>
-      asperiores
-      <sub>minus</sub>
-      <sup>nulla</sup>
-      ,
-      <small>dolorem animi inventore odio vitae voluptas expedita.</small>
-    </p>
+<ul>
+  <li>Bread</li>
+  <li>Milk</li>
+  <li>Eggs</li>
+</ul>
 
-    <!--Block and inline display -->
-    <div>Block 1</div>
-    <div>Block 2</div>
+<ol>
+  <li>Reach point A</li>
+  <li>Turn right and reach point B</li>
+  <li>Turn left and arrive at point C</li>
+</ol>
 
-    <span>Inline 1</span>
-    <span>Inline 2</span>
-
-    <!-- Lists -->
-
-    <ul>
-      <li>Bread</li>
-      <li>Milk</li>
-      <li>Eggs</li>
-    </ul>
-
-    <ol>
-      <li>Reach point A</li>
-      <li>Turn right and reach point B</li>
-      <li>Turn left and arrive at point C</li>
-    </ol>
-
-    <dl>
-      <dt>Ice cream</dt>
-      <dd>- A soft sweet frozen food</dd>
-      <dt>Tea</dt>
-      <dd>- A hot drink</dd>
-    </dl>
-  </body>
-</html>
+<dl>
+  <dt>Ice cream</dt>
+  <dd>- A soft sweet frozen food</dd>
+  <dt>Tea</dt>
+  <dd>- A hot drink</dd>
+</dl>
 ```
 
 if we save the file refresh and you can see the definition list

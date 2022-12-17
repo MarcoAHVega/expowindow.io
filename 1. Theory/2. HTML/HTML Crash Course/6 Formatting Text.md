@@ -23,15 +23,10 @@
   and the content in between let's type heading 1
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-    </body>
-  </html>
+  <body>
+    <!-- Headings and Paragraph -->
+    <h1>Hading 1</h1>
+  </body>
   ```
 
   if you now head back to the browser and refresh
@@ -52,16 +47,11 @@
   and the content to heading two
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-    </body>
-  </html>
+  <body>
+    <!-- Headings and Paragraph -->
+    <h1>Hading 1</h1>
+    <h2>Hading 2</h2>
+  </body>
   ```
 
   save and take a look at the browser
@@ -85,20 +75,15 @@
   change the content as well
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-    </body>
-  </html>
+  <body>
+    <!-- Headings and Paragraph -->
+    <h1>Hading 1</h1>
+    <h2>Hading 2</h2>
+    <h3>Hading 3</h3>
+    <h4>Hading 4</h4>
+    <h5>Hading 5</h5>
+    <h6>Hading 6</h6>
+  </body>
   ```
 
   if you now save the file and take a look at the browser refresh
@@ -132,22 +117,10 @@
   a paragraph
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This id a paragraph</p>
-    </body>
-  </html>
+  <body>
+    <!-- Headings and Paragraph -->
+    <p>This id a paragraph</p>
+  </body>
   ```
 
   take a look at the browser
@@ -168,32 +141,20 @@
   let's make a copy of this save the file refresh
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        voluptatum magni officiis incidunt ad sit optio! In?
-      </p>
-    </body>
-  </html>
+  <body>
+    <!-- Headings and Paragraph -->
+    <p>This is a paragraph</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
+      Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
+      molestiae dolores in odio laudantium ipsa praesentium?
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
+      blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
+      voluptatum magni officiis incidunt ad sit optio! In?
+    </p>
+  </body>
   ```
 
   and you can see that each paragraph starts on a new line and adds a little
@@ -220,34 +181,22 @@
   the break tag copy and paste it
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit optio! In?
-      </p>
-    </body>
-  </html>
+  <body>
+    <!-- Headings and Paragraph -->
+    <p>This is a paragraph</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
+      Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
+      molestiae dolores in odio laudantium ipsa praesentium?
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
+      <br />
+      blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
+      <br />
+      voluptatum magni officiis incidunt ad sit optio! In?
+    </p>
+  </body>
   ```
 
 - > self-closing elements
@@ -290,35 +239,22 @@
   paragraph elements
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit optio! In?
-      </p>
-    </body>
-  </html>
+  <body>
+    <p>This is a paragraph</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
+      Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
+      molestiae dolores in odio laudantium ipsa praesentium?
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
+      <br />
+      blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
+      <br />
+      voluptatum magni officiis incidunt ad sit optio! In?
+    </p>
+  </body>
   ```
 
   if i refresh the browser

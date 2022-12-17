@@ -6,7 +6,6 @@
 
   which brings us to the two default display values of html elements
 
-
   in html elements can either be block level or inline
 
 - > block level element
@@ -31,45 +30,9 @@
   so if you have two div tags block one and block two
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        <del>distinctio beatae</del>
-        <ins>aperiam repudiandae velit</ins>
-        <sub>laborum eligendi</sub>
-        <sup>dolore asperiores</sup>
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-
-      <div>Block 1</div>
-      <div>Block 2</div>
-    </body>
-  </html>
+  <!--Block and inline display -->
+  <div>Block 1</div>
+  <div>Block 2</div>
   ```
 
   they start on a new line and take up the full width
@@ -83,48 +46,12 @@
   or the span tag which is an inline element
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
+  <!--Block and inline display -->
+  <div>Block 1</div>
+  <div>Block 2</div>
 
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        <del>distinctio beatae</del>
-        <ins>aperiam repudiandae velit</ins>
-        <sub>laborum eligendi</sub>
-        <sup>dolore asperiores</sup>
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-
-      <div>Block 1</div>
-      <div>Block 2</div>
-
-      <span>Inline 1</span>
-      <span>Inline 2</span>
-    </body>
-  </html>
+  <span>Inline 1</span>
+  <span>Inline 2</span>
   ```
 
   so in line one and in line two

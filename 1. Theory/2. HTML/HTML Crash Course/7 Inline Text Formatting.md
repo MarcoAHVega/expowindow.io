@@ -1,6 +1,5 @@
 # inline text formatting
 
-
 - > the strong tag
 
   html provides a few elements to format text in a certain way
@@ -14,36 +13,14 @@
   save the file refresh
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        dolor, sit amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit optio! In?
-      </p>
-    </body>
-  </html>
+  <!-- Text Formatting-->
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet consectetur adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque, totam
+    odit dignissimos suscipit fugiat asperiores minus nulla, dolorem animi inventore odio vitae
+    voluptas expedita.
+  </p>
   ```
 
   you can see such content
@@ -59,37 +36,15 @@
   so opening tag is em and let's wrap the next two words
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit optio! In?
-      </p>
-    </body>
-  </html>
+  <!-- Text Formatting-->
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque, totam odit dignissimos
+    suscipit fugiat asperiores minus nulla, dolorem animi inventore odio vitae voluptas expedita.
+  </p>
   ```
 
   in webpages emphasized text is italicized as you can see here with the next two
@@ -119,38 +74,15 @@
   so small opening and closing
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        blanditiis distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-    </body>
-  </html>
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque, totam odit dignissimos
+    suscipit fugiat asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p>
   ```
 
   if you have find print in your web page you can use small tag and it will appear
@@ -165,39 +97,17 @@
   closing
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        distinctio beatae aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-    </body>
-  </html>
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque, totam odit dignissimos
+    suscipit
+    <mark>fugiat</mark>
+    asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p>
   ```
 
   and this will highlight text similar to
@@ -211,40 +121,18 @@
   so wrap with `del`
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        <del>distinctio beatae</del>
-        aperiam repudiandae velit laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-    </body>
-  </html>
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
+    odit dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p>
   ```
 
   refresh and you can see the strikethrough
@@ -261,41 +149,29 @@
   opening tag closing tag
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        <del>distinctio beatae</del>
-        <ins>aperiam repudiandae velit</ins>
-        laborum eligendi dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-    </body>
-  </html>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
+    odit dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p> dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p>
   ```
 
   refresh
@@ -308,42 +184,29 @@
   for subscripts
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        <del>distinctio beatae</del>
-        <ins>aperiam repudiandae velit</ins>
-        <sub>laborum eligendi</sub>
-        dolore asperiores
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-    </body>
-  </html>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
+    odit dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores <sub>minus</sub> nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p> dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p>
   ```
 
 - > the sup tag
@@ -351,45 +214,29 @@
   and the sup tag for superscripts
 
   ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>HTML Crash Course</title>
-    </head>
-    <body>
-      <h1>Hading 1</h1>
-      <h2>Hading 2</h2>
-      <h3>Hading 3</h3>
-      <h4>Hading 4</h4>
-      <h5>Hading 5</h5>
-      <h6>Hading 6</h6>
-
-      <p>This is a paragraph</p>
+  <p>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur autem unde sed.
-        Doloremque, quae quo doloribus quia ipsum sapiente officiis repellat tenetur eligendi
-        molestiae dolores in odio laudantium ipsa praesentium?
-      </p>
-      <hr />
-      <p>
-        <strong>Lorem ipsum</strong>
-        <em>dolor, sit</em>
-        amet consectetur adipisicing elit. Deserunt ex dolores, doloribus
-        <br />
-        <mark>blanditiis</mark>
-        <del>distinctio beatae</del>
-        <ins>aperiam repudiandae velit</ins>
-        <sub>laborum eligendi</sub>
-        <sup>dolore asperiores</sup>
-        <br />
-        voluptatum magni officiis incidunt ad sit
-        <small>optio! In?</small>
-      </p>
-
-      
-
-    </body>
-  </html>
+    Lorem ipsum,
+    <strong>dolor</strong>
+    sit amet
+    <em>consectetur</em>
+    adipisicing elit. In dolorem quaerat impedit. Consectetur ut atque,
+    <del>totam</del>
+    odit dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores <sub>minus</sub> <sup>nulla</sup>,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p> dignissimos suscipit
+    <mark>fugiat</mark>
+    asperiores minus nulla,
+    <small>dolorem animi inventore odio vitae voluptas expedita.</small>
+  </p>
   ```
 
   refresh and you can see the subscript and the superscript

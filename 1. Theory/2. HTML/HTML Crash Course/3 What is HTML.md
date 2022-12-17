@@ -1,6 +1,8 @@
 # what is html?
 
-- > html stands for hyper text markup language
+- > html stands for 
+
+- `hyper text markup language`
 
   and is the language for creating web pages
 
