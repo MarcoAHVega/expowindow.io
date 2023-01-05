@@ -1,26 +1,17 @@
 # Adding PostCSS autoprefixer plugin
 
-*install the postCSS plugin*
+- > install the postCSS autoprefixer plugin
 
-> similar to npm, when you use postCSS you can choose the package or plugins that you want to install and use.
+  similar to npm, when you use postCSS you can choose the package or plugins that you want to install and use.
 
-> we are starting with this one:
+  ```
+  npm install autoprefixer --save-dev
+  ```
 
-> `autoprefixer`
+- > in the postcss.config.js, require this package within our array
 
-*before we list any plugins here. `Let's go download the plugins`*
-
-```js
-npm install autoprefixer --save-dev
-```
-
-*require in the plugins in the `postcss.config.js`*
-
-> Now let's `list this package within our array`.
-
-```js
-
-module.exports = {
-  plugins: [ require('autoprefixer')]
-}
-```
+  ```js
+  module.exports = {
+    plugins: [require('autoprefixer')],
+  }
+  ```

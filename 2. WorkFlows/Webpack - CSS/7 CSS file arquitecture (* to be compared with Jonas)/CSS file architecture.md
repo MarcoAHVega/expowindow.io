@@ -1,49 +1,51 @@
 # css file architectures
 
-_step 3 : create a partial css file for global css rules_
+- > in the styles/base folder, create a partial `_global.css` file
 
-> this is the first of all the partial css files we will create
+```
+...base/_global.css
+```
 
-> jump `back into our main styles.sCSS` file. and lets `move the testing rules into _global.scss` file
+this is the first of all the partial css files we will create
 
-> So go ahead and `copy these rules` to your clipboard and paste them inside \_global.scss
+- > jump back into the styles.scss file, and move the testing rules into `_global.scss`
 
-```css
-$main-red: red;
+  So go ahead and `copy these rules` to your clipboard and paste them inside `_global.scss`
 
-body {
-  h1 {
-    color: $main-red;
+  ```css
+  $main-red: red;
+
+  body {
+    h1 {
+      color: $main-red;
+    }
   }
-}
-```
+  ```
 
-_step 4 : we will `import` this and `all the partial css files` into our style.css file_
+- > in the style.css file, import the partial `_global.scss`
 
-> back in our main `style.css` sheet up on the very top line. Let's create an import:
+  we will `import` this and `all the partial css files` into our style.css file
 
-```js
-@import "base/_global";
-```
+  ```js
+  @import "base/_global";
+  ```
 
-_We haven't used `normalized.css` yet but we did install it when we were first learning how to use NPM_
+- > in the style.css file, import normalize.css
 
-> import `normalize.css`
->
-> within our main `style.css` sheet. We can just say add:
+We haven't used normalized.css yet but we did install it
 
 ```js
 @import "normalize.css";
 @import "base/_global";
 ```
 
-> let's `create a brand new file` in these styles `base` folder that has the single responsibility of `holding our variables`.
+- > in these styles/base folder, create a partial `_variables.scss`
 
-```js
+```
 ...base/_variables.css
 ```
 
-> Let's be sure to go into our `main CSS file` and `import in that new variables file` that we just created.
+- > - > in the style.css file, import the partial `_variables.scss`
 
 ```js
 @import "normalize.css";
@@ -51,4 +53,11 @@ _We haven't used `normalized.css` yet but we did install it when we were first l
 @import "base/_global";
 ```
 
-> let's just go ahead and `cut` this line (in \_global.css) where we defined the `$mainRed: red`, variable and let's `paste` it into the new `_variables.css` file.
+- > in the styles.scss file, cut the `$mainRed: red` color variable and paste in in the `_variables.css` file
+
+- > test the project again
+
+```
+npm run dev
+
+```

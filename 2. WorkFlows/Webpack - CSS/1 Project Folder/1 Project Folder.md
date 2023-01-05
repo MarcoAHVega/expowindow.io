@@ -1,110 +1,120 @@
 # Create a Project folder
 
-_start with a folder named `app`_
+- > in the root folder
 
-_include a `.gitignore` file for best practice_...
+  ```
+  app/
+  .gitignore
+  webpack.config.js
+  ```
 
-```json
- app
- .gitignore
-```
+- in the .gitignore file
 
-_inside the app folder, add an `assets` folder and a `index.html` file_
+  ```
+  # Numerous always-ignore extensions
+  *.diff
+  *.err
+  *.orig
+  *.log
+  *.rej
+  *.swo
+  *.swp
+  *.vi
+  *~
+  *.sass-cache
+  node_modules/
+  .tmp/
 
-```json
- app
-   assets
-   index.html
- .gitignore
-```
+  # OS or Editor folders
+  .DS_Store
+  Thumbs.db
+  .cache
+  .project
+  .settings
+  .tmproj
+  *.esproj
+  nbproject
+  *.sublime-project
+  *.sublime-workspace
+  *.komodoproject
+  .komodotools
+  _notes
+  dwsync.xml
+  ```
 
-_Add `an HTML boilerplate` inside index.html `include a h1` for testing_
+- in the webpack.config.js file
 
-```html
-<h1>This is a test!</h1>
-```
+  ```
 
-_inside assets, add folders `scripts`, `styles`, `images` and `icons`_
+  ```
 
-```json
- app
-   assets
-      scripts
-      styles
-      images
-         icons
-   index.html
- .gitignore
-```
+- > in the app folder
 
-_inside scripts, create a new `App.js` file_
+  ```
+  app/
+     assets/
+     index.html
+  ```
 
-```json
- app
-   assets
-      scripts
-         App.js
-      styles
-      images
-         icons
-   index.html
-.gitignore
-```
+- in the index.html file
 
-_inside App.js, create a test `alert()`_
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body>
+      <h1>This is a test!</h1>
+    </body>
+  </html>
+  ```
 
-```js
-alert('Hello, this is just a test.')
-```
+- > in the assets folder
 
-_to use webpack we need to create a configuration `webpack.config.js` file within the root of our folder_(that is the same level as the app folder)
+  ```
+  assets/
+     scripts/
+     styles/
+     images/
+        icons/
+  ```
 
-```json
-app
-   assets
-      scripts
-         App.js
-      styles
-      images
-         icons
-   index.html
-.gitignore
-webpack.config.js
-```
+- > in the scripts folder
 
-_inside our styles folder create a `styles.css` file_
+  ```json
+  scripts/
+     App.js
+  ```
 
-_within the styles folder I want you to create a new folder named `modules` or `components`_
+- in the App.js file
 
-_create a new folder inside the styles folder and name this folder `base`_
+  ```js
+  alert('Hello, this is just a test.')
+  ```
 
-_create a new file in the base folder and let's name this file `_global.css`_
+- > in the styles folder
 
-```json
-app
-   assets
-      scripts
-         App.js
-      styles
-         styles.css
-         modules
-         base
-         _global.css
-      images
-         icons
-   index.html
-.gitignore
-webpack.config.js
-```
+  ```
+  styles/
+     styles.css
+     modules/
+     base/
 
-> CSS folder structure for the 7-1 pattern
+  ```
 
-styles
+- > CSS folder structure for the 7-1 pattern
 
-      abstract
-      base
-      components
-      layout
-      pages
-      themes
-      vendors
+  ```
+  styles/
+     abstract/
+     base/
+     components/
+     layout/
+     pages/
+     themes/
+     vendors/
+  ```

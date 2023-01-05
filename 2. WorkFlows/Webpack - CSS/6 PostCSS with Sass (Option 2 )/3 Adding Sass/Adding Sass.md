@@ -1,59 +1,55 @@
 # Adding Sass to the project
 
-_install `sass` and `sass-loader`_
+- > install sass and sass-loader
 
-```js
-npm install sass sass-loader
-```
+  ```
+  npm install sass sass-loader
+  ```
 
-> `sass-loader` allows sass to work with `webpack`
+- > in web pack.config.js file
 
-_Now that we've downloaded those two packages_
+  - change the test rule from test: /\.css$/i, to test: /\.scss$/i,,
 
-> jump into your `web pack.config.js` file
+  - and add the sass-loader
 
-> change the test rule from `test: /\.css$/i,` to `test: /\.scss$/i,`,
-
-> and add the `sass-loader`
-
-```js
-  watch: true,
-  module: {
-      rules: [
-        {
-            test: /\.scss$/i,
-            use: ['style-loader','css-loader?url=false', 'postcss-loader', 'sass-loader']
-        }
-      ]
+  ```js
+    watch: true,
+    module: {
+        rules: [
+          {
+              test: /\.scss$/i,
+              use: ['style-loader','css-loader', 'postcss-loader', 'sass-loader']
+          }
+        ]
+    }
   }
-}
-```
+  ```
 
-> rename `styles.css` to `styles.scss`
+- > rename styles.css to styles.scss
 
-> make sure to update the name of the `.scss` file we are importing in our App.js file
+- > in the App.js file, update the name of the .scss file we are importing
 
-```js
-import '../styles/styles.scss'
-```
+  ```js
+  import '../styles/styles.scss'
+  ```
 
-> test if sass is working by creating a variable inside `styles.scss`
+- > in the styles.scss, test if sass is working by creating a variable
 
-```scss
-$main-red: red;
+  ```css
+  $main-red: red;
 
-body {
-  h1 {
-    color: $main-red;
+  body {
+    h1 {
+      color: $main-red;
+    }
   }
-}
-```
+  ```
 
-> Lest take our project for a `test`
+- > Lest take our project for a test
 
-```js
-npm run dev
+  ```
+  npm run dev
 
-```
+  ```
 
-> our text should change to red after we refresh the browser
+  - our text should change to red after we refresh the browser

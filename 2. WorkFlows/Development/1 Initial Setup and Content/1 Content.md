@@ -1,7 +1,6 @@
 # setup folder and Project Content
 
-- Whether you start by using a boilerplate or from scratch, here we start adding to the the new project.
-
+## Whether you start by using a boilerplate or from scratch, here we start adding to the the new project.
 
 > edit the title
 
