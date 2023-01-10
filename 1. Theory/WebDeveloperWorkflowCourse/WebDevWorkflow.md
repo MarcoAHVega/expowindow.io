@@ -19391,7 +19391,7 @@ Section 18: Code Splitting & Lazy Loading
 
   - the fact that this lesson is complete means that this folder is ready for us to send to a web host.
 
-59. Go Live! Deploying our Site to GitHub Pages
+1.  Go Live! Deploying our Site to GitHub Pages
 
 Hello everyone.
 
@@ -21896,7 +21896,7 @@ exports.handler = function (event, context, callback) {
   If we jump back over to the Web browser just to be safe go ahead and perform a manual refresh
   and then if we scroll down to where we added that empty div awesome you can see that our ReACT component rendered into that div.
 
-(65.9)
+<!--^ (65.9)  -->
 
 - Now even though we're not going to actually learn react or J.S. X in this lesson `I do want to show you a few tips.`
   So back in our code within our function for my amazing component we need to remember that this might look like html But it's not html

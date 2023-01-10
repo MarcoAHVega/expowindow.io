@@ -1,6 +1,6 @@
 ## 5. Adding JavaScript to a Web Page
 
-- > placing the script inside the head.
+- > placing the script `inside` the head.
 
   in some cases it's going to cause some `loading issues`.
 

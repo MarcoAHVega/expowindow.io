@@ -843,7 +843,7 @@
 
 - > toFixed() method
 
-  - let's say we wanted to restrict this number to only use two digits after the decimal place.
+  - let's say we wanted to` restrict` this number to only use two digits after the decimal place.
 
   ```js
   const x = 2.546832
