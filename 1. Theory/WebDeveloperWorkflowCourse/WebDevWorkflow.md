@@ -4923,22 +4923,23 @@ Section 7: Mobile-first Essentials
 
   - let's go ahead and also adjust the `font weight to 300` I think that looks good.
 
-  ````css
-     .feature-item {
-        position: relative;
-        padding-left: 94px;
+  ```css
+  .feature-item {
+    position: relative;
+    padding-left: 94px;
 
-        &__icon {
-           position: absolute;
-           left: 0;
-        }
+    &__icon {
+      position: absolute;
+      left: 0;
+    }
 
-        &__title {
-           font-size: 1.875rem;
-           font-weight: 300;
-        }
-     }
-     ```
+    &__title {
+      font-size: 1.875rem;
+      font-weight: 300;
+    }
+  }
+  ```
+
   - Next why don't we focus on the `paragraph text`. I think it should use a slightly `larger font siz`e and a significantly higher `line height`.
 
   - Now if you think back to several lessons ago `we actually created a reusable class named generic-content-container` and that is how we created the styling for these paragraph elements
@@ -4951,23 +4952,21 @@ Section 7: Mobile-first Essentials
 
   ```css
   .generic-content-container {
+    p {
+      font-weight: 300; ///
+      line-height: 1.65;
+      margin: 1.8rem 0;
 
-     p {
-     font-weight: 300; ///
-     line-height: 1.65;
-     margin: 1.8rem 0;
-
-     @mixin atSmall {
+      @mixin atSmall {
         font-size: 1.125rem;
-     }
-     }
+      }
+    }
 
-     p a {
-     font-weight: 700;
-     }
-
+    p a {
+      font-weight: 700;
+    }
   }
-  ````
+  ```
 
   - Next let's `reduce the space between the title and the paragraph`
   - so to do that. Let's `take two steps`. `First` let's adjust our `generic-content-container` and tell `paragraphs to not have any top margin`.
@@ -5282,10 +5281,6 @@ Section 7: Mobile-first Essentials
     }
     ```
 
-  ```
-
-  ```
-
 (31.2)
 
 - At this point in the lesson I'd like to change gears and `talk about merging the our features git branch back into our master branch`.
@@ -5328,8 +5323,6 @@ Section 7: Mobile-first Essentials
     # Please enter a commit message to explain why this merge is necessary,
 
     # especially if it merges an updated upstream into a topic branch.
-
-    #
 
     # Lines starting with '#' will be ignored, and an empty message aborts
 
@@ -5386,7 +5379,9 @@ Section 7: Mobile-first Essentials
   <div id="testimonials" class="page-section"></div>
   ```
 
-  - All right. So `that created the vertical spacing at the top of the section.`
+````
+
+- All right. So `that created the vertical spacing at the top of the section.`
 
 ---
 
@@ -5396,7 +5391,7 @@ Section 7: Mobile-first Essentials
 
 ```html
 <div id="testimonials" class="page-section page-section--testimonials"></div>
-```
+````
 
 - Now let's go ahead and open up our `_page-section.CSS` file to create that modifier rule.
 
@@ -5504,7 +5499,7 @@ strong {
 
   - so within our html `underneath the heading level two` that we were just working on. Let's `create a new div that has a class of row`.
 
-  ```css
+  ```html
      <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg"> Real <strong>Testimonials</strong></h2>
 
      <div class:"row">
@@ -5564,10 +5559,10 @@ strong {
   - let's `create a brand new css file` to go along with this new testimonial class name.
   - So `within our modules` CSS folder let's create a new file let's name it `_testimonial.css` create a class testimonial
 
-  ```css
-  .testimonial {
-  }
-  ```
+    ```css
+    .testimonial {
+    }
+    ```
 
   - and before we forget let's go into our main styles.css file and import this new file. So
     `@import "modules_testimonial";`
@@ -5660,24 +5655,24 @@ strong {
 
   - let's `increase the border radius from 30 to half of 160 which is 80 Perfect`.
 
-  ````css
+  ```css
   .testimonial {
-     background-color: rgba(255, 255, 255, .8);
-     padding: 0 1.8125rem 1px 1.8125rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 1.8125rem 1px 1.8125rem;
 
-
-     &__photo {
-        border-radius: 80px;
-        overflow: hidden;
-        width: 160px;
-        height: 160px;
-     }
+    &__photo {
+      border-radius: 80px;
+      overflow: hidden;
+      width: 160px;
+      height: 160px;
+    }
   }
-     ```
+  ```
 
   - Next let's `center this image horizontally.`
 
   - To do that we can use `margin` let's use full shorthand. So top zero. Right. Auto bottom zero left auto looks good.
+
   ```css
      &__photo {
         border-radius: 80px;
@@ -5687,7 +5682,7 @@ strong {
         margin: 0 auto 0 auto;
      }
   }
-  ````
+  ```
 
   - I used full shorthand because we are probably going to want to `customize the bottom margin in just a moment`.
   - Next if we compare what we have in the browser to our design file it looks like `we need to position the image so that the top half violates the top edge of the containing element`.
@@ -6126,7 +6121,7 @@ strong {
   - So basically we want to offset or zero out these padding values.
   - So let's just say `padding-left: 0;` `padding-right: 0;`
 
-  ````css
+  ```css
      .wrapper {
         padding-left: 18px;
         padding-right: 18px;
@@ -6142,7 +6137,7 @@ strong {
            padding-left: 0;  ////
            padding-right: 0; ////
         }
-     ```
+  ```
 
   - But for screens that are considered `medium or larger We do want padding.` So then we can use a mixin media query say `@mixin atMedium {}` Let's add that padding back in. `So we can just copy and paste these lines`.
 
@@ -6167,7 +6162,7 @@ strong {
               padding-right: 18px;///
            }
         }
-     ```
+  ```
 
   - We can even `reduce this margin on the testimonial item itself down at the Mobile view.`
 
@@ -6179,7 +6174,7 @@ strong {
   .testimonial {
   background-color: rgba(255, 255, 255, .8);
   padding: 0 1.8125rem 1px 1.8125rem;
-  ````
+  ```
 
   - And let's `wrap these padding values in a mixin media query`.
   - So let's just `copy that line` mix in at medium paste line in
