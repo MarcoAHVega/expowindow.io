@@ -14,7 +14,7 @@
 
 - Whether a `clone`, a `tutorial` or an `original` project, start by collecting the captured images using the Eagle app in page sections
 
-- - for now I'm using only https://www.awwwards.com/?utm_source=eagle&utm_medium=eagle or https://land-book.com/?utm_source=eagle&utm_medium=eagle for inspiration
+- for now I'm using only https://www.awwwards.com/?utm_source=eagle&utm_medium=eagle or https://land-book.com/?utm_source=eagle&utm_medium=eagle for inspiration
 
 # MoodBoard
 

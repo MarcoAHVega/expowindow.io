@@ -26,7 +26,7 @@
 
   - open it with live server
 
-- > next up, we need to load react into our existing web page
+- > load react into our existing web page
 
   Now to do that, we'll be using a CDN, a content delivery network, which just means we're loading the library from the web
 
@@ -64,7 +64,7 @@
   </html>
   ```
 
-- > There's also one more thing we need to add a reference to the babel library
+- > add a reference to the babel library
 
   Bubble is a compiler, which allows us to use extra features in our JavaScript that browsers don't natively support, and it compiles those extra features into code that the browser does understand at runtime.
 
@@ -106,7 +106,7 @@
 
 # 8. Making a React Component
 
-- > Now, in our case, for now, we're just going to use React to build a single component in our existing webpage.
+- > use React to build a single component in our existing webpage
 
   - a React component is basically just a JavaScript function, and inside that function, we can create a component template and also any component functionality.
 
@@ -210,7 +210,7 @@
   </script>
   ```
 
-- > create some kind of expressions directly in the template itself
+- > create expressions directly in the JSX template
 
   ```html
   <script type="text/babel">

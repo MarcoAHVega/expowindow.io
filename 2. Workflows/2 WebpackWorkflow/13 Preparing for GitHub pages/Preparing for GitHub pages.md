@@ -1,4 +1,4 @@
-# Deploying our Site to GitHub Pages
+## Preparing for GitHub pages
 
 - > there's a few changes I want to make first
 
@@ -112,26 +112,10 @@
 
 - > let's use git to push up our changes
 
-```
-git add -A
+  ```
+  git add -A
 
-git commit -m 'completed our build process configuration.'
+  git commit -m 'completed our build process configuration.'
 
-git push origin master
-```
-
-- > publish repo in GitHub pages
-
-- navigate to the overview screen for the current repo
-
-- click on settings
-
-- on the left panel, scroll down to pages
-
-- on Source choose `Deploy from a branch`
-
-- on brach `master` `/docs`
-
-- and click on save
-
-- it will take a few minutes
+  git push origin master
+  ```
