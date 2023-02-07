@@ -2685,17 +2685,16 @@ https://youtu.be/QUlWAKx2ZH8
   import styles from '../conference.module.css'
   import Link from 'next/link'
 
+  export let speakerJson = {}
+
+  // Static data fetching
   async function fetchSpeakers() {
     const response = await fetch(
       'https://raw.githubusercontent.com/adhithiravi/Consuming-GraphqL-Apollo/master/api/data/speakers.json'
     )
-    {
-      next: {
-        revalidate: 20
-      }
-    }
 
     const data = await response.json()
+    speakerJson = data
     return data
   }
 
@@ -2844,7 +2843,7 @@ https://youtu.be/QUlWAKx2ZH8
   export default async function Page({ params }) {
     const speakerInfo = fetchSpeakerInfo(params)
 
-    const { id, name, bio, sessions } = speakerInfo
+    const { name, bio, sessions } = speakerInfo
 
     return (
       <div key={id} className={styles.infoContainer}>
