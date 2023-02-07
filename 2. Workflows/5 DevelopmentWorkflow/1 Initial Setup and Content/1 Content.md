@@ -1,6 +1,6 @@
 # setup folder and Project Content
 
-## Whether you start by using a boilerplate or from scratch, here we start adding to the the new project.
+- > Whether you start by using a boilerplate or from scratch, here we start adding to the the new project.
 
 > edit the title
 
@@ -8,7 +8,7 @@
 <title>Natours | Exciting tours for adventurous people</title>
 ```
 
-> Create and add all the images to the images folder
+> images
 
 - Using the design as a guide make a list of the images with different sizes and crops
 
