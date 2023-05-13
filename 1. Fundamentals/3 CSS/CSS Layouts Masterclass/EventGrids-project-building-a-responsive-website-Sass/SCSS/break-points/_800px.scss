@@ -1,0 +1,66 @@
+@use "../general-styles/padding" as pad;
+
+@media screen and (max-width: 800px) {
+  // ------------------------------------------- Events
+  .events {
+    &__timing {
+      &--event {
+        grid-template-rows: repeat(3, min-content);
+
+        &__desc {
+          justify-self: center;
+        }
+
+        &__link {
+          grid-row: 3 / 4;
+          justify-self: center;
+        }
+      }
+    }
+  }
+
+  // ------------------------------------------- Footer
+  .footer {
+    & > div {
+      flex-basis: 30%;
+    }
+  }
+
+  // ------------------------------------------- Blog Page
+  .blog-page {
+    flex-direction: column-reverse;
+
+    .blogs__popular-feeds {
+      row-gap: 0;
+
+      &--search {
+        padding: pad.padding-st-v(s) pad.padding-st-h(xs);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        fieldset {
+          padding: 0;
+
+          i {
+            display: none;
+          }
+        }
+      }
+
+      &--content {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+
+  // ------------------------------------------- Contact Page
+  .contact {
+    flex-wrap: wrap;
+
+    &__content,
+    &__form {
+      flex-basis: 100%;
+    }
+  }
+}

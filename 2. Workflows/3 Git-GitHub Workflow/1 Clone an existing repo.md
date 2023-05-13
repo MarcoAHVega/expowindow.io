@@ -40,7 +40,7 @@
       this will show where git thinks the remote repo is...
 
         ```
-        git remote -v`
+        git remote -v
         ```
 
 - > push repo to Github

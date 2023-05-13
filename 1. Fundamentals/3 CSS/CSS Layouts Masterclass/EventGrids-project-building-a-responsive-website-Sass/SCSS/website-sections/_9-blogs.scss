@@ -1,0 +1,79 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+
+.blogs {
+  background-color: clrs.color-theme("1");
+
+  &__container {
+    &--blog {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      padding: pad.padding-st-v(l) pad.padding-st-h(s) pad.padding-st-v(lc);
+      border-radius: 0.5rem;
+      background-color: clrs.color-theme("4");
+      box-shadow: 2px 2px 15px rgba(clrs.color-type("5"), 0.4);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: none;
+        transform: scale(0.97);
+      }
+
+      position: relative;
+
+      &__date {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+
+        padding: pad.padding-st-v(s);
+        border-radius: inherit;
+        background-color: clrs.color-theme("2");
+        color: clrs.color-type("1");
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          background-color: clrs.color-theme("3");
+        }
+
+        display: flex;
+        flex-direction: column;
+
+        span:first-child {
+          font-size: type.font-size-st(m);
+        }
+
+        span:last-child {
+          font-size: type.font-size-st(sc);
+          font-weight: type.font-weight(light);
+        }
+      }
+
+      &__category {
+        color: clrs.color-type("4");
+        font-size: type.font-size-st(sc);
+        transition: inherit;
+
+        &:hover {
+          color: clrs.color-type("3");
+        }
+      }
+
+      &__desc {
+        font-weight: type.font-weight(regular);
+      }
+
+      &__link {
+        background-color: clrs.color-theme("3");
+        align-self: flex-start;
+
+        &:hover {
+          background-color: clrs.color-theme("2");
+        }
+      }
+    }
+  }
+}

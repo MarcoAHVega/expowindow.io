@@ -1,0 +1,75 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/padding" as pad;
+@use "../general-styles/typography" as type;
+@use "../general-styles/gradients" as grad;
+
+.testimonials {
+  background-image: grad.gradient(gradient-primary);
+
+  &__mini-title,
+  &__title,
+  &__desc {
+    color: clrs.color-type("1");
+  }
+
+  &__mini-title {
+    &::before,
+    &::after {
+      background-color: clrs.color-theme("1");
+
+      &::before {
+        left: -35%;
+      }
+
+      &::after {
+        right: -35%;
+      }
+    }
+  }
+
+  &__container {
+    &--testimonial {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      background-color: clrs.color-theme("4");
+      padding: pad.padding-st-v(xl) pad.padding-st-h(l);
+      border-radius: 0.5rem;
+
+      &__personal-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &--img {
+          height: 10rem;
+          width: 10rem;
+
+          img {
+            border-radius: 50%;
+            object-position: 65% center;
+          }
+        }
+
+        div {
+          p:last-of-type {
+            display: flex;
+            column-gap: 0.2rem;
+
+            margin-top: 0.8rem;
+
+            i {
+              color: orange;
+            }
+          }
+        }
+      }
+
+      &__desc {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+  }
+}

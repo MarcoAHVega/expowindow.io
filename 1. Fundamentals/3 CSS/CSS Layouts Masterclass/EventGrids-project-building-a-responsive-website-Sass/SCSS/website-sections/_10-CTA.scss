@@ -1,0 +1,23 @@
+@use "../general-styles/colors" as clrs;
+@use "../general-styles/gradients" as grad;
+
+.cta {
+  background: grad.gradient(gradient-primary),
+    url("../images/call-action/call-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__mini-title {
+    border: 2px solid clrs.color-theme("4");
+  }
+
+  &__mini-title,
+  &__title,
+  &__desc {
+    color: clrs.color-type("1");
+  }
+
+  &__desc {
+    margin-bottom: 2rem;
+  }
+}

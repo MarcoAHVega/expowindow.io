@@ -309,3 +309,53 @@ import '../styles/styles.scss'
   </body>
 </html>
 ```
+
+- > 5. change the folder and file structure to reflect the one in Figma
+
+- rename the styles folder to scss
+
+- rename the styles.scss to main.scss
+
+- update the import in App.js from..
+
+```js
+import '../styles/styles.scss'
+```
+
+to..
+
+```js
+import '../scss/main.scss'
+```
+
+- in Figma rename the project 1-Styles to 1-Base
+
+- rename the folder base to 1-base
+
+- update the imports in main.scss to 1-base
+
+```scc
+@import 'normalize.css';
+@import '1-base/variables';
+@import '1-base/global';
+@import '1-base/mixins';
+@import 'modules/main-nav.scss';
+```
+
+- in folder scss, create 2 folders, 2-elements and 3-components
+
+- rename the folder modules to 4-sections
+
+- rename the file main-nav.scss to navigation-section.scss
+
+- update the imports in main.scss
+
+```js
+@import 'normalize.css';
+@import '1-base/variables';
+@import '1-base/global';
+@import '1-base/mixins';
+@import '4-sections/navigation-section.scss';
+```
+
+- run to test
